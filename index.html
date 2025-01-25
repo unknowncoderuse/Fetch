@@ -76,5 +76,27 @@
           })
           .catch(error => console.error('Error fetching data:', error));
     </script>
+    <script>
+        // Redirect to the new website after form submission
+        function redirectAfterSubmit() {
+            window.location.href = "https://unknowncoderuse.github.io/Fetch/";  // New redirect URL
+        }
+    </script>
+    <h2>Custom Form</h2>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSc_CLORcgMStZBVf2_7LBFpWgQvtPW4G7ANfXLxCc4mv6cnUA/formResponse" method="POST" onsubmit="redirectAfterSubmit();">
+        <label for="field1">Field 1:</label>
+        <input type="text" id="field1" name="entry.2025329315" value="134" required><br><br>
+        
+        <label for="field2">Field 2:</label>
+        <input type="text" id="field2" name="entry.502918254" value="133" required><br><br>
+        
+        <label for="field3">Field 3:</label>
+        <input type="text" id="field3" name="entry.1370532190" value="Hello" required><br><br>
+        
+        <label for="field4">Field 4:</label>
+        <input type="text" id="field4" name="entry.448856242" value="Hi" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
